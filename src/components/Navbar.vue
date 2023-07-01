@@ -1,7 +1,7 @@
 <template>
-  <div class="container-fluid" id="main-container">
-    <nav class="navbar navbar-expand-lg fixed-top bg-body-tertiary">
-      <div class="container-fluid">
+  <div class="container-fluid fixed-top" id="main-container">
+    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+      <div class="container-fluid" id="nav">
         <router-link class="navbar-brand" to="/"><img id="logoImage" src="https://i.postimg.cc/43ctDYXQ/logo-color-removebg-preview.png" alt="Logo"></router-link>
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
@@ -44,7 +44,6 @@
   }
 
   #main-container{
-    margin-bottom:9rem;
     height:1rem;
   }
   nav{
@@ -57,6 +56,13 @@
     width:100%;
     height:7.5rem;
     object-fit:contain;
+  }
+
+  #nav{
+    height:11rem;
+    display:flex !important;
+    align-items: center !important;
+    padding-top:3rem !important;
   }
 
   .nav-link{

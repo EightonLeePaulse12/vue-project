@@ -58,8 +58,7 @@ export default {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    background-color: rgb(255, 0, 0);
-    height: 5rem;
+    background: linear-gradient(98.3deg, rgb(0, 0, 0) 10.6%, rgb(255, 0, 0) 97.7%);    height: 5rem;
     margin-bottom: 1rem;
     border-radius: 10px;
 }
@@ -79,7 +78,7 @@ h4 {
 }
 
 h3{
-    color:black;
+    color:rgb(255, 255, 255);
 }
 
 #fa{
@@ -130,6 +129,6 @@ i:hover {
 }
 
 .width {
-    background-color: red;
+    background: linear-gradient(98.3deg, rgb(0, 0, 0) 10.6%, rgb(255, 0, 0) 97.7%);
 }
 </style>
