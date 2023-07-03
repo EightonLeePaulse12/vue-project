@@ -1,41 +1,113 @@
-import { createStore } from 'vuex'
+import { createStore } from "vuex";
 
-const data = 'https://eightonleepaulse12.github.io/vue-eomp-data/database/index.json'
+const data =
+  "https://eightonleepaulse12.github.io/vue-eomp-data/database/index.json";
 
 export default createStore({
   state: {
-    data:null
+    skills: null,
+    tools: null,
+    testimonials: null,
+    projects: null,
+    education: null,
   },
-  getters: {
-  },
+  getters: {},
   mutations: {
-    setData(state,data){
-      state.data = database
-    }
-    // setSkills(state, skills){
-    //   state.skills = myData.skills
-    // },
-    // setTools(){
-
-    // }
+    setSkills(state, skills) {
+      state.skills = skills;
+      console.log(skills);
+    },
+    setTools(state, tools) {
+      state.tools = tools;
+      console.log(tools);
+    },
+    setTestimonials(state, testimonials) {
+      state.testimonials = testimonials;
+      console.log(testimonials);
+    },
+    setProjects(state, projects) {
+      state.projects = projects;
+      console.log(projects);
+    },
+    setEducation(state, education) {
+      state.education = education;
+      console.log(education);
+    },
   },
   actions: {
-    async displayData(context){
-      try{
-        let results = await fetch(data)
-        let database = await results.json()
-        console.log(database + 'reached')
-        console.log(results.json())
-        if(database){
-          context.commit("setData",data)
-        } else{
-          console.log('Your fetch has failed')
+    async displayData(context) {
+      try {
+        let results = await fetch(data);
+        console.log(results);
+        let database = await results.json();
+        let skills = database.skills;
+        if (skills) {
+          context.commit("setSkills", skills);
+          console.log(skills);
+        } else {
+          console.log("YOUR FETCH FOR SKILLS HAS FAILED");
         }
-      } catch(e){
-        console.log("An error has occured", e)
+        console.log(database);
+      } catch (e) {
+        console.log(e, "THIS IS YOUR ERROR");
       }
-    }
+    },
+    async displayTools(context) {
+      try {
+        let results = await fetch(data);
+        let database = results.json();
+        let tools = database.tools;
+        if (tools) {
+          context.commit("setTools", tools);
+        } else {
+          console.log("YOUR FETCH FOR TOOLS HAS FAILED");
+        }
+      } catch (e) {
+        console.log(e, "IS YOUR ERROR");
+      }
+    },
+    async displayTestimonials(context) {
+      try {
+        let results = await fetch(data);
+        let database = results.json();
+        let testimonials = database.testimonials;
+        if (testimonials) {
+          context.commit("setTestimonials", testimonials);
+        } else {
+          console.log("YOUR FETCH FOR TESTIMONIALS HAS FAILED");
+        }
+      } catch (e) {
+        console.log(e, "IS YOUR ERROR");
+      }
+    },
+    async displayProjects(context) {
+      try {
+        let results = await fetch(data);
+        let database = results.json();
+        let projects = database.projects;
+        if (projects) {
+          context.commit("setProjects", projects);
+        } else {
+          console.log("YOUR FETCH FOR PROJECTS HAS FAILED");
+        }
+      } catch (e) {
+        console.log(e, "IS YOUR ERROR");
+      }
+    },
+    async displayEducation(context) {
+      try {
+        let results = await fetch(data);
+        let database = results.json();
+        let education = database.education;
+        if (education) {
+          context.commit("setEducation", education);
+        } else {
+          console.log("YOUR FETCH FOR EDUCATION HAS FAILED");
+        }
+      } catch (e) {
+        console.log(e, "IS YOUR ERROR");
+      }
+    },
   },
-  modules: {
-  }
-})
+  modules: {},
+});

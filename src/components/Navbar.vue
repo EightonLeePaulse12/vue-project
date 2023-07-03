@@ -67,6 +67,7 @@
 
   .nav-link{
     font-size:1.3rem;
+    cursor:pointer;
   }
 
   .nav-link:hover{
