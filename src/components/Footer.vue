@@ -19,7 +19,8 @@
                             class="fas fa fa-brands fa-linkedin"></i></a>
                 </div>
                 <div class="circle">
-                    <a target="_blank" href="mailto:eightonleepaulse@gmail.com"><i id="fa" class="fa-solid fa-envelope"></i></a>
+                    <a target="_blank" href="mailto:eightonleepaulse@gmail.com"><i id="fa"
+                            class="fa-solid fa-envelope"></i></a>
                 </div>
                 <div class="circle">
                     <a target="_blank" href="https://www.reddit.com/user/EightonLeePaulse"><i id="fa"
@@ -58,7 +59,8 @@ export default {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    background: linear-gradient(98.3deg, rgb(0, 0, 0) 10.6%, rgb(255, 0, 0) 97.7%);    height: 5rem;
+    background: linear-gradient(98.3deg, rgb(0, 0, 0) 10.6%, rgb(255, 0, 0) 97.7%);
+    height: 5rem;
     margin-bottom: 1rem;
     border-radius: 10px;
 }
@@ -73,26 +75,27 @@ h4 {
     color: rgb(239, 231, 231);
 }
 
-.mt-5{
-    color:white;
+.mt-5 {
+    color: white;
 }
 
-h3{
-    color:rgb(255, 255, 255);
+h3 {
+    color: rgb(255, 255, 255);
 }
 
-#fa{
-    color:white;
+#fa {
+    color: white;
 }
-#fa:hover{
-    color:red;
+
+#fa:hover {
+    color: red;
 }
 
 .socials {
     width: 14rem;
     display: flex;
     justify-content: space-between;
-    margin-top:15px;
+    margin-top: 15px;
 }
 
 .circle {
