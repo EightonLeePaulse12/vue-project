@@ -1,32 +1,12 @@
 <template>
-    <div>
-        <div id="carouselExampleDark" class="carousel carousel-dark slide">
-            <div class="carousel-indicators">
-              <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-              <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="1" aria-label="Slide 2"></button>
-              <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="2" aria-label="Slide 3"></button>
-              <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="3" aria-label="Slide 4"></button>
-              <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="4" aria-label="Slide 5"></button>
-              <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="5" aria-label="Slide 6"></button>
-
+    <div class="container" data-aos="fade-right" data-aos-duration="750" id="container">
+        <div class="mb-3" v-for="item in testimonials" :key="item.id">
+            <img :src="item.image" id="picture" class="card-img-top" alt="Image">
+            <div class="card-body">
+              <h5 class="card-title"> {{ item.name }} - {{ item.role }} </h5>
+              <p class="card-text">" {{ item.testimonial }} "</p>
+              <p class="card-text"><small class="text-body-secondary"></small></p>
             </div>
-            <div class="carousel-inner">
-              <div class="carousel-item active" data-bs-interval="10000" v-for="item in testimonials" :key="item.id">
-                <img :src="item.image" class="d-block w-100" alt="Image">
-                <div class="carousel-caption d-none d-md-block">
-                  <h5> {{ item.name }} </h5>
-                  <p>Some representative placeholder content for the first slide.</p>
-                </div>
-              </div>
-            </div>
-            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="prev">
-              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-              <span class="visually-hidden">Previous</span>
-            </button>
-            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="next">
-              <span class="carousel-control-next-icon" aria-hidden="true"></span>
-              <span class="visually-hidden">Next</span>
-            </button>
           </div>
     </div>
 </template>
@@ -37,15 +17,42 @@
             testimonials(){
                 return this.$store.state.testimonials
             },
-            mounter(){
+        },
+            mounted(){
                 this.$store.dispatch('displayTestimonials')
             }
 
         }
-    }
+    
 </script>
 
 <style scoped>
+
+#picture{
+    height:30rem;
+    object-fit: contain;
+    background: linear-gradient(98.3deg, rgb(0, 0, 0) 10.6%, rgb(255, 0, 0) 97.7%);
+}
+
+.mb-3{
+    padding:20px;
+}
+
+img{
+    border-top-right-radius: 20px;
+    border-top-left-radius:20px;
+    border-radius:.1%;
+}
+
+
+.card-body{
+    background: linear-gradient(98.3deg, rgb(0, 0, 0) 10.6%, rgb(255, 0, 0) 97.7%);
+    color:white;
+    padding:20px;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+}
+
 
 
 </style>

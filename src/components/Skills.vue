@@ -20,7 +20,7 @@
                         <div class="col"><img
                                 :src="skills[1]?.image"
                                 id="img" alt="CSS"></div>
-                        <div class="col"><img :src="skills[2].image"
+                        <div class="col"><img :src="skills[2]?.image"
                                 id="img" alt="Javascript"></div>
                     </div>
                 </div>
