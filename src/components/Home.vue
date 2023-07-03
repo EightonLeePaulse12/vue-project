@@ -26,29 +26,26 @@ export default {
 <style scoped>
 .container-fluid {
     padding: 0;
-    background-color:black;
-    position: relative;
+    background-color: black;
     display: flex;
     justify-content: center;
     align-items: center;
     width: 100%;
     height: 110vh;
-    opacity:1;
-    position:relative;
-    box-shadow: inset 2px 2px 3px rgba(0, 0, 0, .6);
+    opacity: 1;
     background-attachment: fixed;
-    background-repeat:no-repeat;
-    background-position:center center;
-    object-fit:cover;
-    z-index:-1;
-    background-image: url('https://i.postimg.cc/KzqLzXjv/e1943ea6477681592245aaae28401420.jpg')
+    background-repeat: no-repeat;
+    background-position: center center;
+    object-fit: fill;
+    z-index: -1;
+    background-image: url('https://i.postimg.cc/bvjJQjzf/fiedgz3v3na41.jpg');
 }
 
-.color{
-    width:100%;
-    height:110vh;
-    background-color:black;
-    opacity:.5;
+.color {
+    width: 100%;
+    height: 110vh;
+    background-color: black;
+    opacity: .6;
 }
 
 .container-fluid::after {
@@ -62,23 +59,24 @@ export default {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    position:absolute;
-    top:0;
-    width:100%;
-    height:110vh;
-    z-index:1;
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 110vh;
+    z-index: 1;
 }
 
-h2{
-    color:white;
-    font-weight:bold;
-    font-size:6rem;
-    margin-bottom:20px;
+h2 {
+    color: white;
+    font-weight: bold;
+    font-size: 6rem;
+    margin-bottom: 20px;
     text-shadow: 0 -1px 4px #FFF, 0 -2px 10px rgb(255, 38, 0), 0 -10px 20px #ff2f00, 0 -18px 40px #F00;
 }
-h3{
-    color:white;
-    margin-bottom:2rem;
+
+h3 {
+    color: white;
+    margin-bottom: 2rem;
     text-shadow: 0 -1px 4px #FFF, 0 -2px 10px rgb(255, 38, 0), 0 -10px 20px #ff2f00, 0 -18px 40px #F00;
 }
 </style>

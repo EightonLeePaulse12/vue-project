@@ -14,7 +14,7 @@
                     <h3>A little about myself...</h3>
                 </div>
                 <div class="row" id="paraRow">
-                    <div class="col">
+                    <div class="col" id="parCol">
                         <p id="para">
                             Since 2019, I have been extremely passionate about coding. My journey started one random day when
                             I was playing ROBLOX. On this particular day I searched how to make games and once I started
@@ -42,6 +42,11 @@ export default {
     align-items: center;
 }
 
+#parCol{
+    padding:0;
+    justify-content: center;
+}
+
 #picOfMe {
     width: 100%;
     object-fit: contain;
@@ -60,7 +65,7 @@ p {
 }
 
 #para{
-    font-size:1rem;
+    font-size:1.2rem;
     padding:0;
 }
 

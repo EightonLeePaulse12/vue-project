@@ -35,12 +35,12 @@ export default createStore({
     },
   },
   actions: {
-    async displayData(context) {
+    async displaySkills(context) {
       try {
         let results = await fetch(data);
         console.log(results);
         let database = await results.json();
-        let skills = database.skills;
+        let skills = await database.skills;
         if (skills) {
           context.commit("setSkills", skills);
           console.log(skills);
@@ -55,7 +55,7 @@ export default createStore({
     async displayTools(context) {
       try {
         let results = await fetch(data);
-        let database = results.json();
+        let database = await results.json();
         let tools = database.tools;
         if (tools) {
           context.commit("setTools", tools);
@@ -69,7 +69,7 @@ export default createStore({
     async displayTestimonials(context) {
       try {
         let results = await fetch(data);
-        let database = results.json();
+        let database = await results.json();
         let testimonials = database.testimonials;
         if (testimonials) {
           context.commit("setTestimonials", testimonials);
@@ -83,7 +83,7 @@ export default createStore({
     async displayProjects(context) {
       try {
         let results = await fetch(data);
-        let database = results.json();
+        let database = await results.json();
         let projects = database.projects;
         if (projects) {
           context.commit("setProjects", projects);
@@ -97,8 +97,9 @@ export default createStore({
     async displayEducation(context) {
       try {
         let results = await fetch(data);
-        let database = results.json();
+        let database = await results.json();
         let education = database.education;
+        console.log(database)
         if (education) {
           context.commit("setEducation", education);
         } else {

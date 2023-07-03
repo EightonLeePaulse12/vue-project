@@ -3,17 +3,20 @@
     <h1>About Me</h1>
     <h2>Hi, I'm Eighton-Lee</h2>
     <TopOfAbout/>
-    <AboutPage/>
+    <Education/>
+    <Skills/>
   </div>
 </template>
 
 <script>
 import TopOfAbout from '../components/TopOfAbout'
-import AboutPage from '../components/AboutPage.vue'
+import Education from '../components/Education.vue'
+import Skills from '../components/Skills.vue'
   export default {
     components:{
       TopOfAbout,
-      AboutPage
+      Education,
+      Skills
     },
     computed:{
       skills(){
