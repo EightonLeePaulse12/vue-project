@@ -31,7 +31,7 @@
             <div class="row">
                 <div class="col">
                     <h4>
-                       {{ education[2]?.type }}
+                        {{ education[2]?.type }}
                     </h4>
                     <img :src="education[2]?.image" loading="lazy" alt="">
                     <p id="years">Years: {{ education[2].years }}</p>
@@ -43,9 +43,9 @@
     <div v-else>
         <div class="d-flex justify-content-center">
             <div class="spinner-border" role="status">
-              <span class="visually-hidden">Loading...</span>
+                <span class="visually-hidden">Loading...</span>
             </div>
-          </div>
+        </div>
     </div>
 </template>
 
@@ -69,22 +69,22 @@ h3 {
     margin-top: 2rem;
 }
 
-#years{
-    margin-top:20px;
-    margin-bottom:20px;
-    font-weight:bold;
+#years {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    font-weight: bold;
 }
 
-#desc{
-    font-size:1.99rem;
-    font-weight:bold;
+#desc {
+    font-size: 1.99rem;
+    font-weight: bold;
 }
 
-img{
+img {
     object-fit: contain;
-    display:inline-block;
-    width:100%;
-    height:7rem;
+    display: inline-block;
+    width: 100%;
+    height: 7rem;
 }
 
 #primary {
@@ -121,63 +121,63 @@ img{
     margin-bottom: 3rem;
 }
 
-@media (max-width:1200px){
-    #desc{
-        font-size:1.66rem;
+@media (max-width:1200px) {
+    #desc {
+        font-size: 1.66rem;
     }
 }
 
-@media (max-width:992px){
-    #desc{
-        font-size:1.5rem;
+@media (max-width:992px) {
+    #desc {
+        font-size: 1.5rem;
     }
 }
 
-@media (max-width:768px){
-    #desc{
+@media (max-width:768px) {
+    #desc {
         font-size: 1.4rem;
     }
 }
 
-@media (max-width:520px){
-    #desc{
-        font-size:1.3rem;
+@media (max-width:520px) {
+    #desc {
+        font-size: 1.3rem;
     }
 }
 
-@media (max-width:485px){
-    #desc{
-        font-size:1.2rem;
+@media (max-width:485px) {
+    #desc {
+        font-size: 1.2rem;
     }
 }
 
-@media (max-width:354px){
-    #desc{
-        font-size:1.1rem;
+@media (max-width:354px) {
+    #desc {
+        font-size: 1.1rem;
     }
 }
 
-@media (max-width:327px){
-    #desc{
-        font-size:1rem;
+@media (max-width:327px) {
+    #desc {
+        font-size: 1rem;
     }
 }
 
-@media (max-width:274px){
-    #desc{
-        font-size:.9rem;
+@media (max-width:274px) {
+    #desc {
+        font-size: .9rem;
     }
 }
 
-@media (max-width:227px){
-    #desc{
-        font-size:.8rem;
+@media (max-width:227px) {
+    #desc {
+        font-size: .8rem;
     }
 }
 
-@media (max-width:198px){
-    #desc{
-        font-size:.7rem;
+@media (max-width:198px) {
+    #desc {
+        font-size: .7rem;
     }
 }
 </style>

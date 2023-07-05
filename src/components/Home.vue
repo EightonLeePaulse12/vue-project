@@ -59,7 +59,7 @@ export default {
     justify-content: center;
     align-items: center;
     position: absolute;
-    text-align:center;
+    text-align: center;
     top: 0;
     width: 100%;
     height: 110vh;
@@ -71,12 +71,31 @@ h2 {
     font-weight: bold;
     font-size: 6rem;
     margin-bottom: 20px;
-    text-shadow: 0 -1px 4px #FFF, 0 -2px 10px rgb(255, 38, 0), 0 -10px 20px #ff2f00, 0 -18px 40px #F00;
+    animation:animate 2s infinite ease-in;
+}
+
+@keyframes animate{
+    10%{
+        text-shadow: 0 -1px 4px #FFF, 0 -2px 10px rgb(255, 38, 0), 0 -10px 20px #ff2f00, 0 -18px 40px #F00;
+    }
+
+
+    50%{
+        text-shadow: 0 -1px 4px #FFF, 0 -2px 10px rgb(255, 38, 0), 0 -10px 20px #ff2f00, 0 -18px 40px #F00;
+    }
+
+    90%{
+        text-shadow: 0 -1px 4px #FFF, 0 -2px 10px rgb(255, 38, 0), 0 -10px 20px #ff2f00, 0 -18px 40px #F00;
+    }
+    95%{
+        text-shadow: 0 -1px 4px #FFF, 0 -2px 10px rgb(255, 38, 0), 0 -10px 20px #ff2f00, 0 -18px 40px #F00;
+
+    }
 }
 
 h3 {
     color: white;
     margin-bottom: 2rem;
-    text-shadow: 0 -1px 4px #FFF, 0 -2px 10px rgb(255, 38, 0), 0 -10px 20px #ff2f00, 0 -18px 40px #F00;
+    animation:animate 2s infinite ease-in;
 }
 </style>
