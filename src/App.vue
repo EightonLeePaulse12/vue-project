@@ -25,7 +25,6 @@ body {
   text-align: center;
   font-family: 'Poppins', sans-serif;
 }
-
 </style>
 
 <script>

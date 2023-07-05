@@ -22,11 +22,12 @@ h1 {
     width: 100%;
     text-align: center;
 }
-p{
-    text-align:center;
-    font-weight:bold;
-    margin-top:1rem;
-    font-size:1.2rem;
+
+p {
+    text-align: center;
+    font-weight: bold;
+    margin-top: 1rem;
+    font-size: 1.2rem;
 }
 
 h2 {

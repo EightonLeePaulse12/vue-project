@@ -1,4 +1,4 @@
-    <template>
+<template>
     <div v-if="skills">
         <h3>
             Skills
@@ -28,9 +28,9 @@
                     <ul v-else>
                         <div class="d-flex justify-content-center">
                             <div class="spinner-border" role="status">
-                              <span class="visually-hidden">Loading...</span>
+                                <span class="visually-hidden">Loading...</span>
                             </div>
-                          </div>
+                        </div>
                     </ul>
                     <div class="row">
                         <div class="col"><img loading="lazy" :src="tools[0]?.image" id="img" alt="HTML"></div>
@@ -61,8 +61,9 @@
                 </div>
             </div>
             <div class="row" id="button">
-                <a id="cv" target="_blank" href="https://drive.google.com/file/d/1J0YpeZ8CNJwd-jj-CvyNHzn33DhEO-TM/view?usp=sharing">Check out my resume <i
-                        class="fa-solid fa-download"></i></a>
+                <a id="cv" target="_blank"
+                    href="https://drive.google.com/file/d/1J0YpeZ8CNJwd-jj-CvyNHzn33DhEO-TM/view?usp=sharing">Check out my
+                    resume <i class="fa-solid fa-download"></i></a>
             </div>
         </div>
     </div>
@@ -102,7 +103,7 @@ h3 {
 
 #list {
     margin-bottom: 4.3rem;
-    padding:0;
+    padding: 0;
 }
 
 #cv {
@@ -114,8 +115,8 @@ h3 {
     margin-top: 2rem;
 }
 
-#ul{
-    padding:0;
+#ul {
+    padding: 0;
 }
 
 #cv:hover {
@@ -123,9 +124,9 @@ h3 {
     text-decoration: underline;
 }
 
-#colRight{
-    padding:0;
-    width:100% !important;
+#colRight {
+    padding: 0;
+    width: 100% !important;
 }
 
 .row {
@@ -139,7 +140,7 @@ h3 {
 
 #colLeft {
     border-right: 2px solid black;
-    padding:0;
+    padding: 0;
 }
 
 #img {
@@ -154,8 +155,8 @@ h5 {
     margin-bottom: 20px;
 }
 
-.container-fluid{
-    padding:0;
+.container-fluid {
+    padding: 0;
 }
 
 li {
@@ -167,70 +168,71 @@ li {
     margin: 1.4rem 0;
 }
 
-@media (max-width:768px){
+@media (max-width:768px) {
     #row {
-        margin-right:1rem;
+        margin-right: 1rem;
     }
 }
 
-@media (max-width:637px){
-    #list li:nth-child(2){
-        margin-bottom:5.8rem;
+@media (max-width:637px) {
+    #list li:nth-child(2) {
+        margin-bottom: 5.8rem;
     }
 
-    #colLeft{
-        padding:20px;
-        padding-top:0;
+    #colLeft {
+        padding: 20px;
+        padding-top: 0;
     }
-    .container-fluid{
-        padding:0;
+
+    .container-fluid {
+        padding: 0;
     }
 }
 
-@media (max-width:369px){
-    .col{
-        padding:0;
+@media (max-width:369px) {
+    .col {
+        padding: 0;
     }
 }
 
-@media (max-width:480px){
-    #list li:nth-child(2){
-        margin-bottom:1rem;
+@media (max-width:480px) {
+    #list li:nth-child(2) {
+        margin-bottom: 1rem;
     }
 
-    #list{
-        margin-bottom:2rem;
+    #list {
+        margin-bottom: 2rem;
     }
 
-    #row{
-        flex-direction:column;
+    #row {
+        flex-direction: column;
     }
 
-    #colLeft{
-        border-right:none;
-        padding:0;
-        margin-bottom:20px;
+    #colLeft {
+        border-right: none;
+        padding: 0;
+        margin-bottom: 20px;
     }
 
-    #row{
-        margin:0;
+    #row {
+        margin: 0;
     }
 
-    #roww{
-        flex-direction:column;
-        margin-bottom:0;
+    #roww {
+        flex-direction: column;
+        margin-bottom: 0;
     }
 
-    h5{
-        font-weight:bold;
+    h5 {
+        font-weight: bold;
     }
 
-    #ul{
-        margin-bottom:4rem;
+    #ul {
+        margin-bottom: 4rem;
     }
 
-    ul{
-        padding:0;
+    ul {
+        padding: 0;
     }
 }
 </style>

@@ -99,7 +99,7 @@ export default createStore({
         let results = await fetch(data);
         let database = await results.json();
         let education = database.education;
-        console.log(database)
+        console.log(database);
         if (education) {
           context.commit("setEducation", education);
         } else {

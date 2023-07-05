@@ -17,6 +17,9 @@
               <router-link class="nav-link active" to="/about">About Me</router-link>
             </li>
             <li class="nav-item">
+              <router-link class="nav-link active" to="/resume">Resume</router-link>
+            </li>
+            <li class="nav-item">
               <router-link class="nav-link active" to="/projects">My Projects</router-link>
             </li>
             <li class="nav-item">
@@ -48,7 +51,7 @@ div {
   height: 1rem;
 }
 
-.navbaar{
+.navbaar {
   background: linear-gradient(98.3deg, rgb(0, 0, 0) 10.6%, rgb(255, 0, 0) 97.7%);
 }
 
@@ -70,8 +73,8 @@ nav {
   padding-top: 3rem !important;
 }
 
-router-link{
-  cursor:pointer;
+router-link {
+  cursor: pointer;
 }
 
 .nav-link {
@@ -81,7 +84,7 @@ router-link{
 }
 
 .nav-link:hover {
-  cursor:pointer;
+  cursor: pointer;
   text-shadow: 0 -1px 4px #FFF, 0 -2px 10px rgb(255, 38, 0), 0 -10px 20px #ff2f00, 0 -18px 40px #F00 !important;
 }
 
@@ -95,7 +98,7 @@ span {
 @media (max-width:992px) {
   #nav {
     padding: 0 !important;
-    height:7.5rem;
+    height: 7.5rem;
   }
 }
 </style>

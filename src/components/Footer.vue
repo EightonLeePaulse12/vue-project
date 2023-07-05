@@ -71,25 +71,25 @@ export default {
 }
 
 h4 {
-    text-align:center;
+    text-align: center;
     color: rgb(239, 231, 231);
 }
 
 .mt-5 {
     color: white;
-    margin-top:16px !important;
+    margin-top: 16px !important;
 }
 
-#footer-container{
-    padding:25px;
+#footer-container {
+    padding: 25px;
 }
 
 h3 {
     color: rgb(255, 255, 255);
 }
 
-h5{
-    text-align:center;
+h5 {
+    text-align: center;
 }
 
 #fa {
@@ -140,21 +140,22 @@ i:hover {
     color: white;
 }
 
-h3{
-    text-align:center;
+h3 {
+    text-align: center;
 }
-p{
-    text-align:center;
+
+p {
+    text-align: center;
 }
 
 .width {
     background: linear-gradient(98.3deg, rgb(0, 0, 0) 10.6%, rgb(255, 0, 0) 97.7%);
-    margin-top:auto;
+    margin-top: auto;
 }
 
-@media (max-width:242px){
-    #footer-container{
-        padding:-30px;
+@media (max-width:242px) {
+    #footer-container {
+        padding: -30px;
     }
 }
 </style>
