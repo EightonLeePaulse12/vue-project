@@ -1,7 +1,7 @@
 <template>
     <div class="container" data-aos="fade-right" data-aos-duration="750" id="container">
         <div class="mb-3" v-for="item in testimonials" :key="item.id">
-            <img :src="item.image" id="picture" class="card-img-top" alt="Image">
+            <img loading="lazy" :src="item.image" id="picture" class="card-img-top" alt="Image">
             <div class="card-body">
               <h5 class="card-title"> {{ item.name }} - {{ item.role }} </h5>
               <p class="card-text">" {{ item.testimonial }} "</p>

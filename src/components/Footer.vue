@@ -1,12 +1,12 @@
 <template>
     <div class="width">
-        <div class="container-fluid">
+        <div class="container-fluid" id="footer-container">
             <div class="statement">
                 <h3>Interested in working together?</h3>
                 <h4>Let's do it!</h4>
             </div>
             <div class="Logo">
-                <img id="footerImg" src="https://i.postimg.cc/wj8d8M5q/logo-no-background.png" alt="Image">
+                <img id="footerImg" src="https://i.postimg.cc/wj8d8M5q/logo-no-background.png" loading="lazy" alt="Image">
                 <h5 class="mt-5">Developing greatness.</h5>
             </div>
             <div class="socials">
@@ -59,7 +59,6 @@ export default {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    background: linear-gradient(98.3deg, rgb(0, 0, 0) 10.6%, rgb(255, 0, 0) 97.7%);
     height: 5rem;
     margin-bottom: 1rem;
     border-radius: 10px;
@@ -72,15 +71,25 @@ export default {
 }
 
 h4 {
+    text-align:center;
     color: rgb(239, 231, 231);
 }
 
 .mt-5 {
     color: white;
+    margin-top:16px !important;
+}
+
+#footer-container{
+    padding:25px;
 }
 
 h3 {
     color: rgb(255, 255, 255);
+}
+
+h5{
+    text-align:center;
 }
 
 #fa {
@@ -131,8 +140,21 @@ i:hover {
     color: white;
 }
 
+h3{
+    text-align:center;
+}
+p{
+    text-align:center;
+}
+
 .width {
     background: linear-gradient(98.3deg, rgb(0, 0, 0) 10.6%, rgb(255, 0, 0) 97.7%);
     margin-top:auto;
+}
+
+@media (max-width:242px){
+    #footer-container{
+        padding:-30px;
+    }
 }
 </style>

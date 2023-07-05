@@ -23,7 +23,7 @@
                         <div class="card h-100 shadow">
                             <div class="card-body">
                                 <h5 class="card-title fw-bold" id="title"> {{ item.name }} </h5>
-                                <img id="picture" :src="item.image" alt="Project">
+                                <img id="picture" :src="item.image" loading="lazy" alt="Project">
                                 <p class="card-text" id="description"> {{ item.description }} </p>
                                 <div class="media-buttons">
                                     <a class="button" target="_blank" :href="item.github">Github</a>
@@ -35,7 +35,7 @@
                 </div>
                 <div class="row">
                     <div class="col" id="git">
-                        <a id="hub" href="">Check out my Github</a>
+                        <a id="hub" target="_blank" href="">Check out my Github</a>
                     </div>
                 </div>
             </div>
@@ -61,6 +61,10 @@ h3 {
     margin-top: 2rem;
 }
 
+.card-body{
+    padding:0;
+}
+
 .media-buttons{
     width:100%;
     height:100%;
@@ -68,6 +72,7 @@ h3 {
     height:2.7rem;
     width:100%;
     justify-content: space-evenly;
+    align-items:center;
 }
 
 .button{
@@ -134,4 +139,6 @@ h3 {
 #project{
     margin-bottom:2rem;
 }
+
+
 </style>
