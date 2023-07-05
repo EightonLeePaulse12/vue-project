@@ -7,7 +7,7 @@
             <div class="row">
                 <div class="col">
                     <h4>{{ education[0]?.type }}</h4>
-                    <img :src="education[0]?.image" alt="">
+                    <img :src="education[0]?.image" loading="lazy" alt="">
                     <p id="years">Years: {{ education[0].years }}</p>
                     <p id="desc"> {{ education[0].description }} </p>
 
@@ -20,7 +20,7 @@
                     <h4>
                         {{ education[1]?.type }}
                     </h4>
-                    <img :src="education[1]?.image" alt="">
+                    <img :src="education[1]?.image" loading="lazy" alt="">
                     <p id="years">Years: {{ education[1].years }}</p>
                     <p id="desc"> {{ education[1].description }} </p>
 
@@ -33,7 +33,7 @@
                     <h4>
                        {{ education[2]?.type }}
                     </h4>
-                    <img :src="education[2]?.image" alt="">
+                    <img :src="education[2]?.image" loading="lazy" alt="">
                     <p id="years">Years: {{ education[2].years }}</p>
                     <p id="desc"> {{ education[2].description }} </p>
                 </div>
@@ -119,5 +119,65 @@ img{
     border: 2px solid black;
     background: linear-gradient(98.3deg, rgb(0, 0, 0) 10.6%, rgb(255, 0, 0) 97.7%);
     margin-bottom: 3rem;
+}
+
+@media (max-width:1200px){
+    #desc{
+        font-size:1.66rem;
+    }
+}
+
+@media (max-width:992px){
+    #desc{
+        font-size:1.5rem;
+    }
+}
+
+@media (max-width:768px){
+    #desc{
+        font-size: 1.4rem;
+    }
+}
+
+@media (max-width:520px){
+    #desc{
+        font-size:1.3rem;
+    }
+}
+
+@media (max-width:485px){
+    #desc{
+        font-size:1.2rem;
+    }
+}
+
+@media (max-width:354px){
+    #desc{
+        font-size:1.1rem;
+    }
+}
+
+@media (max-width:327px){
+    #desc{
+        font-size:1rem;
+    }
+}
+
+@media (max-width:274px){
+    #desc{
+        font-size:.9rem;
+    }
+}
+
+@media (max-width:227px){
+    #desc{
+        font-size:.8rem;
+    }
+}
+
+@media (max-width:198px){
+    #desc{
+        font-size:.7rem;
+    }
 }
 </style>

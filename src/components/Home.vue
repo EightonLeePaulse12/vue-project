@@ -34,7 +34,6 @@ export default {
     height: 110vh;
     opacity: 1;
     background-attachment: fixed;
-    background-repeat: no-repeat;
     background-position: center center;
     object-fit: fill;
     z-index: -1;
@@ -60,6 +59,7 @@ export default {
     justify-content: center;
     align-items: center;
     position: absolute;
+    text-align:center;
     top: 0;
     width: 100%;
     height: 110vh;
