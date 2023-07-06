@@ -88,6 +88,10 @@ router-link {
   text-shadow: 0 -1px 4px #FFF, 0 -2px 10px rgb(255, 38, 0), 0 -10px 20px #ff2f00, 0 -18px 40px #F00 !important;
 }
 
+.nav-link:active{
+  text-shadow: 0 -1px 4px #eaf20c, 0 -2px 10px rgb(225, 255, 0), 0 -10px 20px #eeff00, 0 -18px 40px rgb(242, 255, 0) !important;
+}
+
 span {
   color: white !important;
   background-color: rgb(255, 38, 0) !important;

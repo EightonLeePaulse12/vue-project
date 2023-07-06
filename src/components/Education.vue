@@ -64,9 +64,13 @@ export default {
 </script>
 
 <style scoped>
+
 h3 {
+    margin-top: 6rem;
+    padding: 20px;
+    width: 100%;
+    font-weight: bold;
     text-align: center;
-    margin-top: 2rem;
 }
 
 #spinner {
