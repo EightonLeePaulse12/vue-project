@@ -1,6 +1,6 @@
 <template>
   <div>
-    <h1>Contact Me</h1>
+    <h1>Let's get in touch!</h1>
     <form action="https://formspree.io/f/mbjvrebv" id="form" method="POST">
       <div class="mb-3">
         <label for="exampleFormControlInput1" class="form-label">Name and Surname</label>
@@ -22,6 +22,11 @@
         <button class="pressMe" type="submit">Submit</button>
       </div>
     </form>
+    <div class="container-fluid text-center">
+      <h5>Reach out!</h5>
+      <h6><i class="fa-solid fa-phone"></i> +27 67 990 6093</h6>
+      <h6><i class="fa-solid fa-envelope"></i> eightonleepaulse@gmail.com</h6>
+    </div>
   </div>
 </template>
 
@@ -40,6 +45,23 @@ h1 {
   background: linear-gradient(98.3deg, rgb(0, 0, 0) 10.6%, rgb(255, 0, 0) 97.7%);
   margin-bottom: 0;
   color: white;
+}
+
+.text-center{
+  background: linear-gradient(98.3deg, rgb(0, 0, 0) 10.6%, rgb(255, 0, 0) 97.7%);
+}
+
+h5{
+  padding:20px;
+  margin:0;
+  text-shadow: 0 -1px 4px #FFF, 0 -2px 10px rgb(255, 38, 0), 0 -10px 9px #ff2f00, 0 1px 10px #F00 !important;
+  color:white;
+}
+
+h6{
+  color:white;
+  margin:0;
+  padding:20px;
 }
 
 #exampleFormControlInput1 {

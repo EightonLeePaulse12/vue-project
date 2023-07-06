@@ -1,6 +1,5 @@
 <template>
     <div>
-        <h1>My Resume</h1>
         <Education />
         <Skills />
     </div>

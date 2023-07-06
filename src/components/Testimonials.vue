@@ -55,6 +55,21 @@ img {
     border-radius: .1%;
 }
 
+@media (width > 992px){
+    .car{
+        width:65%;
+    }
+}
+
+@media (width < 400px){
+    img{
+        object-fit:cover;
+    }
+
+    .car{
+        padding:0;
+    }
+}
 
 .card-body {
     color: rgb(255, 255, 255);

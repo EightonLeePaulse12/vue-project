@@ -66,9 +66,15 @@ export default {
 </script>
 
 <style scoped>
-h3 {
+
+.h5 {
+    padding-top: 7rem;
+    padding-bottom: 3rem;
+    margin: 0;
+    width: 100%;
+    background: linear-gradient(98.3deg, rgb(0, 0, 0) 10.6%, rgb(255, 0, 0) 97.7%);
+    color: white;
     text-align: center;
-    margin-top: 2rem;
 }
 
 .card-body {
@@ -82,6 +88,7 @@ h3 {
     height: 2.7rem;
     width: 100%;
     padding-bottom: 20px;
+    padding-top:auto;
     justify-content: space-evenly;
     align-items: center;
 }
@@ -124,11 +131,12 @@ h3 {
 
 #hub {
     text-decoration: none;
-    color: red;
     border: 2px solid black;
     border-radius: 10px;
-    background-color: black;
+    color: black;
+    background: rgb(166, 5, 5);
     width: 12rem;
+    font-weight:bold;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -140,8 +148,9 @@ h3 {
 }
 
 #hub:hover {
-    color: white;
-    background: red;
+    color: rgb(226, 15, 15);
+    background: white;
+    border: 2px solid rgb(11, 11, 11);
 }
 
 .button:hover {
