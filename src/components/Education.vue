@@ -41,7 +41,7 @@
         </div>
     </div>
     <div v-else>
-        <div class="d-flex justify-content-center">
+        <div id="spinner" class="d-flex justify-content-center">
             <div class="spinner-border" role="status">
                 <span class="visually-hidden">Loading...</span>
             </div>
@@ -67,6 +67,11 @@ export default {
 h3 {
     text-align: center;
     margin-top: 2rem;
+}
+
+#spinner {
+    padding: 30px;
+    margin: 30px;
 }
 
 #years {
@@ -121,61 +126,61 @@ img {
     margin-bottom: 3rem;
 }
 
-@media (max-width:1200px) {
+@media (width < 1200px) {
     #desc {
         font-size: 1.66rem;
     }
 }
 
-@media (max-width:992px) {
+@media (width < 992px) {
     #desc {
         font-size: 1.5rem;
     }
 }
 
-@media (max-width:768px) {
+@media (width < 768px) {
     #desc {
         font-size: 1.4rem;
     }
 }
 
-@media (max-width:520px) {
+@media (width < 520px) {
     #desc {
         font-size: 1.3rem;
     }
 }
 
-@media (max-width:485px) {
+@media (width < 485px) {
     #desc {
         font-size: 1.2rem;
     }
 }
 
-@media (max-width:354px) {
+@media (width < 354px) {
     #desc {
         font-size: 1.1rem;
     }
 }
 
-@media (max-width:327px) {
+@media (width < 327px) {
     #desc {
         font-size: 1rem;
     }
 }
 
-@media (max-width:274px) {
+@media (width < 274px) {
     #desc {
         font-size: .9rem;
     }
 }
 
-@media (max-width:227px) {
+@media (width < 227px) {
     #desc {
         font-size: .8rem;
     }
 }
 
-@media (max-width:198px) {
+@media (width < 198px) {
     #desc {
         font-size: .7rem;
     }

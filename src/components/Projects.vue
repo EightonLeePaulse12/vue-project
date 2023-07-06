@@ -1,7 +1,7 @@
 <template>
     <div>
 
-        <div class="container text-center">
+        <div class="container-fluid text-center" id="back">
             <div class="h5">
                 Here are a few projects I worked on:
             </div>
@@ -17,7 +17,7 @@
                     </div>
                     </div>
             </div> -->
-        <div class="container-fluid" v-if="projects">
+        <div class="container-fluid" id="fluid" v-if="projects">
             <div class="card-group row row-cols-1 row-cols-md-2 mx-auto g-4">
                 <div class="col" id="project" v-for="item in projects" :key="item.id">
                     <div class="card h-100 shadow">
@@ -37,7 +37,7 @@
             </div>
             <div class="row">
                 <div class="col" id="git">
-                    <a id="hub" target="_blank" href="https://github.com/EightonLeePaulse12"><i
+                    <a id="hub" target="_blank" href="https://github.com/EightonLeePaulse12"> <i
                             class="fa-brands fa-github"></i> Check out my Github </a>
                 </div>
             </div>
@@ -81,20 +81,35 @@ h3 {
     display: flex;
     height: 2.7rem;
     width: 100%;
+    padding-bottom: 20px;
     justify-content: space-evenly;
     align-items: center;
 }
 
+#back {
+    background: linear-gradient(98.3deg, rgb(0, 0, 0) 10.6%, rgb(255, 0, 0) 97.7%);
+
+}
+
+#fluid {
+    background: linear-gradient(98.3deg, rgb(0, 0, 0) 10.6%, rgb(255, 0, 0) 97.7%);
+
+}
+
 .h5 {
-    margin-bottom: 1rem;
+    padding-bottom: 2rem;
+    color: white;
 }
 
 .button {
     height: 2.7rem;
     width: 8rem;
     color: black;
-    background: red;
+    background: rgb(166, 5, 5);
     font-weight: bold;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
     text-align: center;
     text-decoration: none;
     border: 2px solid black;
@@ -113,7 +128,11 @@ h3 {
     border: 2px solid black;
     border-radius: 10px;
     background-color: black;
-    width: 11rem;
+    width: 12rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
     text-align: center;
     height: 3.7rem;
     padding: .2rem;
@@ -126,8 +145,9 @@ h3 {
 }
 
 .button:hover {
-    color: red;
-    background: black;
+    color: rgb(226, 15, 15);
+    background: white;
+    border: 2px solid rgb(11, 11, 11);
 }
 
 #description {
@@ -138,6 +158,7 @@ h3 {
 
 #title {
     text-align: center;
+    padding: 10px;
 }
 
 #picture {
@@ -157,8 +178,9 @@ h3 {
     margin-bottom: 2rem;
 }
 
-@media (max-width:350px) {
+@media (width < 350px) {
     #project {
         padding: 0;
     }
-}</style>
+}
+</style>

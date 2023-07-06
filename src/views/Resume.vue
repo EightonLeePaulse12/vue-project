@@ -1,20 +1,20 @@
 <template>
     <div>
         <h1>My Resume</h1>
-        <Education/>
-        <Skills/>
+        <Education />
+        <Skills />
     </div>
 </template>
 
 <script>
 import Education from '../components/Education.vue'
 import Skills from '../components/Skills.vue'
-    export default {
-        components:{
-            Education,
-            Skills
-        }
+export default {
+    components: {
+        Education,
+        Skills
     }
+}
 </script>
 
 <style scoped>
@@ -24,7 +24,5 @@ h1 {
     width: 100%;
     font-weight: bold;
     text-align: center;
-  }
-  
-
+}
 </style>

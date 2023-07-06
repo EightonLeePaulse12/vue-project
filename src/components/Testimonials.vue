@@ -1,6 +1,8 @@
 <template>
-    <div class="container" data-aos="fade-right" data-aos-duration="750" id="container">
-        <div class="mb-3 container" v-for="item in testimonials" :key="item.id">
+    <div class="container" id="container">
+
+        <div class="car container" data-aos="fade-right" data-aos-duration="750" v-for="item in testimonials"
+            :key="item.id">
             <img loading="lazy" :src="item.image" id="picture" class="card-img-top" alt="Image">
             <div class="card-body">
                 <h5 class="card-title"> {{ item.name }} - {{ item.role }} </h5>
@@ -30,15 +32,21 @@ export default {
 #picture {
     height: 30rem;
     object-fit: contain;
+    background: transparent;
+}
+
+.container {
+    border-radius: 20px;
+}
+
+#app {
     background: linear-gradient(98.3deg, rgb(0, 0, 0) 10.6%, rgb(255, 0, 0) 97.7%);
+
 }
 
-.container{
-    border-radius:20px;
-}
-
-.mb-3 {
-    padding: 20px;
+.car {
+    margin-top: 2rem;
+    border: 2px solid white;
 }
 
 img {
@@ -49,8 +57,7 @@ img {
 
 
 .card-body {
-    background: linear-gradient(98.3deg, rgb(0, 0, 0) 10.6%, rgb(255, 0, 0) 97.7%);
-    color: white;
+    color: rgb(255, 255, 255);
     padding: 20px;
     border-bottom-left-radius: 20px;
     border-bottom-right-radius: 20px;

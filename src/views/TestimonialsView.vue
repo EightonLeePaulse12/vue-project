@@ -1,7 +1,7 @@
 <template>
-    <div>
+    <div class="background">
         <h1>Testimonials</h1>
-        <p>Some people have said some nice things about me...</p>
+        <h5>Some people have said some nice things about me...</h5>
         <Testimonials />
     </div>
 </template>
@@ -17,24 +17,35 @@ export default {
 
 <style scoped>
 h1 {
-    margin-top: 6rem;
-    margin-top: 8rem;
+    padding-top: 1rem;
+    padding-bottom: 2rem;
+    margin: 0;
     width: 100%;
+    background: linear-gradient(98.3deg, rgb(0, 0, 0) 10.6%, rgb(255, 0, 0) 97.7%);
+    color: white;
     text-align: center;
 }
 
-p {
+.h5 {
+    padding-bottom: 2rem;
+    color: white;
+}
+
+@media (width > 991px) {
+    h1 {
+        margin-top: 6.4rem;
+    }
+}
+
+.background {
+    background: linear-gradient(98.3deg, rgb(0, 0, 0) 10.6%, rgb(255, 0, 0) 97.7%);
+}
+
+h5 {
     text-align: center;
     font-weight: bold;
     margin-top: 1rem;
+    color: white;
     font-size: 1.2rem;
-}
-
-h2 {
-    margin-top: 3rem;
-    width: 100%;
-    text-align: center;
-    margin-bottom: 2rem;
-
 }
 </style>

@@ -14,19 +14,19 @@
               <router-link class="nav-link active" aria-current="page" to="/">Home</router-link>
             </li>
             <li class="nav-item">
-              <router-link class="nav-link active" to="/about">About Me</router-link>
+              <router-link class="nav-link active" to="/about">About</router-link>
             </li>
             <li class="nav-item">
               <router-link class="nav-link active" to="/resume">Resume</router-link>
             </li>
             <li class="nav-item">
-              <router-link class="nav-link active" to="/projects">My Projects</router-link>
+              <router-link class="nav-link active" to="/projects">Projects</router-link>
             </li>
             <li class="nav-item">
               <router-link class="nav-link active" to="/testimonials">Testimonials</router-link>
             </li>
             <li class="nav-item">
-              <router-link class="nav-link active" to="/contact">Contact Me</router-link>
+              <router-link class="nav-link active" to="/contact">Contact</router-link>
             </li>
           </ul>
         </div>
@@ -95,7 +95,7 @@ span {
   border-radius: 5px;
 }
 
-@media (max-width:992px) {
+@media (width < 992px) {
   #nav {
     padding: 0 !important;
     height: 7.5rem;

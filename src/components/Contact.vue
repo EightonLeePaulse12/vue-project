@@ -43,7 +43,7 @@ h1 {
 }
 
 #exampleFormControlInput1 {
-  color: white;
+  color: rgb(0, 0, 0);
 }
 
 label {
@@ -62,25 +62,32 @@ form {
   width: 5rem;
   height: 3rem;
   color: white;
-  background-color: red;
-  border: 2px solid black;
+  background-color: rgb(166, 5, 5);
+  border: 2px solid rgb(249, 242, 242);
+  font-weight: bold;
   border-radius: 10px;
 }
 
+.pressMe:hover {
+  color: rgb(226, 15, 15);
+  background: white;
+  border: 2px solid rgb(11, 11, 11);
+}
 
-@media (max-width:719px) {
+
+@media (width < 719px) {
   form {
     padding: 5rem;
   }
 }
 
-@media (max-width:424px) {
+@media (width < 424px) {
   form {
     padding: 3rem;
   }
 }
 
-@media (max-width:342px) {
+@media (width <=342px) {
   form {
     padding: 1rem;
   }

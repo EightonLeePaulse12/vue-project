@@ -16,11 +16,15 @@ export default {
 
 <style scoped>
 h1 {
-    margin-top: 10rem;
-    margin-bottom: 3rem;
+    padding-top: 7rem;
+    padding-bottom: 3rem;
+    margin: 0;
     width: 100%;
+    background: linear-gradient(98.3deg, rgb(0, 0, 0) 10.6%, rgb(255, 0, 0) 97.7%);
+    color: white;
     text-align: center;
 }
+
 
 h2 {
     margin-top: 3rem;

@@ -153,7 +153,7 @@ p {
     margin-top: auto;
 }
 
-@media (max-width:242px) {
+@media (width < 242px) {
     #footer-container {
         padding: -30px;
     }
