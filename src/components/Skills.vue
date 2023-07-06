@@ -63,12 +63,12 @@
             <div class="row" id="button">
                 <a id="cv" target="_blank"
                     href="https://drive.google.com/file/d/1J0YpeZ8CNJwd-jj-CvyNHzn33DhEO-TM/view?usp=sharing">Check out my
-                    resume <i class="fa-solid fa-download"></i></a>
+                    CV <i class="fa-solid fa-download"></i></a>
             </div>
         </div>
     </div>
     <div v-else>
-        <div class="d-flex justify-content-center">
+        <div id="spinner" class="d-flex justify-content-center">
             <div class="spinner-border" role="status">
                 <span class="visually-hidden">Loading...</span>
             </div>
@@ -99,6 +99,10 @@ h3 {
     text-align: center;
     margin-top: 2rem;
     margin-bottom: 2rem;
+}
+#spinner {
+    padding: 30px;
+    margin: 30px;
 }
 
 #list {
@@ -168,13 +172,13 @@ li {
     margin: 1.4rem 0;
 }
 
-@media (max-width:768px) {
+@media (width < 768px) {
     #row {
         margin-right: 1rem;
     }
 }
 
-@media (max-width:637px) {
+@media (width < 637px) {
     #list li:nth-child(2) {
         margin-bottom: 5.8rem;
     }
@@ -189,13 +193,13 @@ li {
     }
 }
 
-@media (max-width:369px) {
+@media (width < 369px) {
     .col {
         padding: 0;
     }
 }
 
-@media (max-width:480px) {
+@media (width < 480px) {
     #list li:nth-child(2) {
         margin-bottom: 1rem;
     }

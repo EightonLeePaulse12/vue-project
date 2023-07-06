@@ -2,12 +2,7 @@
     <div>
         <div class="container-fluid">
             <div class="color">
-
             </div>
-
-            <!-- <div class="image-of-me">
-                <img src="" alt="Pic of me">
-            </div> -->
         </div>
         <div class="headings">
             <h2>Hello There</h2>
@@ -71,23 +66,24 @@ h2 {
     font-weight: bold;
     font-size: 6rem;
     margin-bottom: 20px;
-    animation:animate 2s infinite ease-in;
+    animation: animate 2s infinite ease-in;
 }
 
-@keyframes animate{
-    10%{
+@keyframes animate {
+    10% {
         text-shadow: 0 -1px 4px #FFF, 0 -2px 10px rgb(255, 38, 0), 0 -10px 20px #ff2f00, 0 -18px 40px #F00;
     }
 
 
-    50%{
+    50% {
         text-shadow: 0 -1px 4px #FFF, 0 -2px 10px rgb(255, 38, 0), 0 -10px 20px #ff2f00, 0 -18px 40px #F00;
     }
 
-    90%{
+    90% {
         text-shadow: 0 -1px 4px #FFF, 0 -2px 10px rgb(255, 38, 0), 0 -10px 20px #ff2f00, 0 -18px 40px #F00;
     }
-    95%{
+
+    95% {
         text-shadow: 0 -1px 4px #FFF, 0 -2px 10px rgb(255, 38, 0), 0 -10px 20px #ff2f00, 0 -18px 40px #F00;
 
     }
@@ -96,6 +92,6 @@ h2 {
 h3 {
     color: white;
     margin-bottom: 2rem;
-    animation:animate 2s infinite ease-in;
+    animation: animate 2s infinite ease-in;
 }
 </style>
