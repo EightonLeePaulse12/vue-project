@@ -1,7 +1,7 @@
 <template>
     <div>
-        <Education />
-        <Skills />
+        <Education/>
+        <Skills/>
     </div>
 </template>
 

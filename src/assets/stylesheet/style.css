@@ -1,16 +1,22 @@
 *,
 *::before,
-*::after{
-    margin:0;
-    padding:0;
-    box-sizing:border-box;
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-html{
-    scroll-behavior: smooth;
+html {
+  scroll-behavior: smooth;
 }
 
 html,
-body{
-    overflow-x:hidden !important;
+body {
+  overflow-x: hidden !important;
+}
+
+nav a.router-link-exact-active,
+.li.active {
+  color: white;
+  text-shadow: 0 -1px 4px #fff, 0 -2px 10px rgb(255, 38, 0), 0 -10px 9px #ff2f00, 0 1px 10px #f00 !important;
 }

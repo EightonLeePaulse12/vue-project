@@ -1,7 +1,7 @@
 <template>
     <div class="background">
         <h1>Some people have said some nice things about me...</h1>
-        <Testimonials />
+        <Testimonials/>
     </div>
 </template>
 
@@ -29,9 +29,19 @@ h1 {
 @media (width < 992px) {
     h1 {
         margin-top: 7.2rem;
-        padding-top:110px;
-        padding-left:15px;
-        padding-right:15px;
+        padding-top: 110px;
+        padding-left: 15px;
+        padding-right: 15px;
+
+    }
+}
+
+@media (width >= 992px){
+    h1 {
+        margin-top: 3.5rem;
+        padding-top: 110px;
+        padding-left: 15px;
+        padding-right: 15px;
 
     }
 }

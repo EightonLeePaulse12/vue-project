@@ -99,15 +99,26 @@ h3 {
     text-align: center;
     margin-top: 2rem;
     margin-bottom: 2rem;
-    color:white;
+    color: white;
 }
-h5{
-    color:white;
+
+h5 {
+    color: white;
+    text-shadow: 0 -1px 4px #fff, 0 -2px 10px rgb(255, 38, 0), 0 -10px 9px #ff2f00, 0 1px 10px #f00 !important;
+
 }
-li{
-    color:white;
+
+li {
+    color: white;
 }
+
+#img:hover{
+    transform:scale(1.3);
+    transition:.6s;
+}
+
 #spinner {
+    color:white;
     padding: 30px;
     margin: 30px;
 }
@@ -200,6 +211,12 @@ li {
     }
 }
 
+@media (width < 315px){
+    li{
+        padding:10px;
+    }
+}
+
 @media (width < 369px) {
     .col {
         padding: 0;
@@ -245,5 +262,4 @@ li {
     ul {
         padding: 0;
     }
-}
-</style>
+}</style>

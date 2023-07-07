@@ -5,17 +5,22 @@
       <div class="mb-3">
         <label for="exampleFormControlInput1" class="form-label">Name and Surname</label>
         <input type="text" name="name" class="form-control" id="exampleFormControlInput1"
-          placeholder="Enter Your Name and Surname" required />
+          placeholder="Enter Your Name and Surname" required
+          oninvalid="this.setCustomValidity('Please Enter Your Name and surname so that I know who's speaking 😊')"
+          oninput="this.setCustomValidity('')">
       </div>
       <div class="mb-3">
         <label for="exampleFormControlInput1" class="form-label">E-mail</label>
         <input type="email" name="email" class="form-control" id="exampleFormControlInput1"
-          placeholder="Enter Your E-mail" required />
+          placeholder="Enter Your E-mail" required
+          oninvalid="this.setCustomValidity('Please enter your e-mail so that I can get back to you 😊')"
+          oninput="this.setCustomValidity('')">
       </div>
       <div class="mb-3">
         <label for="exampleFormControlTextarea1" class="form-label">Message</label>
         <textarea class="form-control" name="message" id="exampleFormControlTextarea1" placeholder="Send me a message"
-          rows="3" required></textarea>
+          rows="3" required oninvalid="this.setCustomValidity('Please enter a message for me to read 😊')"
+          oninput="this.setCustomValidity('')"></textarea>
       </div>
       <!-- your other form fields go here -->
       <div class="send d-flex justify-content-center align-items-center p-2">
@@ -46,17 +51,22 @@ h1 {
   color: white;
 }
 
-h5{
-  padding:20px;
-  margin:0;
-  text-shadow: 0 -1px 4px #FFF, 0 -2px 10px rgb(255, 38, 0), 0 -10px 9px #ff2f00, 0 1px 10px #F00 !important;
-  color:white;
+#form:hover {
+  transform: scale(1.05);
+  transition: .6s;
 }
 
-h6{
-  color:white;
-  margin:0;
-  padding:20px;
+h5 {
+  padding: 20px;
+  margin: 0;
+  text-shadow: 0 -1px 4px #FFF, 0 -2px 10px rgb(255, 38, 0), 0 -10px 9px #ff2f00, 0 1px 10px #F00 !important;
+  color: white;
+}
+
+h6 {
+  color: white;
+  margin: 0;
+  padding: 20px;
 }
 
 #exampleFormControlInput1 {
@@ -73,6 +83,14 @@ form {
   padding-top: 2rem;
 
 }
+
+@media (width < 788px) {
+  #exampleFormControlInput1 {
+    font-size: .9rem;
+  }
+}
+
+
 
 .pressMe {
   width: 5rem;
@@ -109,10 +127,10 @@ form {
   }
 }
 
-@media (width < 992px){
-  h1{
-    margin-top:7rem;
-    padding-top:110px;
+@media (width < 992px) {
+  h1 {
+    margin-top: 7rem;
+    padding-top: 110px;
 
   }
 }
