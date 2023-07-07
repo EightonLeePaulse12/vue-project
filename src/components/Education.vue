@@ -96,12 +96,6 @@ h3 {
     }
 }
 
-@media(width < 371px){
-    #desc{
-        font-size:1rem;
-    }
-}
-
 #years {
     margin-top: 20px;
     margin-bottom: 20px;
@@ -184,6 +178,12 @@ img {
 @media (width < 485px) {
     #desc {
         font-size: 1.2rem;
+    }
+}
+
+@media(width < 371px){
+    #desc{
+        font-size:1rem;
     }
 }
 
