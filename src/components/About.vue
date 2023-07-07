@@ -81,13 +81,13 @@ h3 {
 
 #likes {
     text-align: center;
+    margin-bottom:20px;
     padding: 0;
 }
 
 ul {
     padding: 0;
     margin-bottom: 0;
-    background: linear-gradient(98.3deg, rgb(0, 0, 0) 10.6%, rgb(255, 0, 0) 97.7%);
 
 }
 
@@ -99,8 +99,6 @@ h5 {
     margin-bottom: 0;
     justify-content: center;
     align-items: center;
-    background: linear-gradient(98.3deg, rgb(0, 0, 0) 10.6%, rgb(255, 0, 0) 97.7%);
-
     border-bottom: 2px solid black;
     font-size: 1.5rem;
     font-weight: bold;
@@ -116,9 +114,7 @@ h5 {
     justify-content: center;
 }
 
-#container {
-    background: linear-gradient(98.3deg, rgb(0, 0, 0) 10.6%, rgb(255, 0, 0) 97.7%);
-}
+
 
 #parCol {
     padding: 0;

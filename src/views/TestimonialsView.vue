@@ -21,20 +21,19 @@ h1 {
     text-shadow: 0 -1px 4px #FFF, 0 -2px 10px rgb(255, 38, 0), 0 -10px 9px #ff2f00, 0 1px 10px #F00 !important;
     margin: 0;
     width: 100%;
-    background: linear-gradient(98.3deg, rgb(0, 0, 0) 10.6%, rgb(255, 0, 0) 97.7%);
     color: white;
     text-align: center;
 }
 
 
-@media (width > 991px) {
+@media (width < 992px) {
     h1 {
-        margin-top: 6.4rem;
-    }
-}
+        margin-top: 7.2rem;
+        padding-top:110px;
+        padding-left:15px;
+        padding-right:15px;
 
-.background {
-    background: linear-gradient(98.3deg, rgb(0, 0, 0) 10.6%, rgb(255, 0, 0) 97.7%);
+    }
 }
 
 h5 {

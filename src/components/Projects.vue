@@ -6,17 +6,6 @@
                 Here are a few projects I worked on:
             </div>
         </div>
-        <!-- <div class="card-group row row-cols-1 row-cols-md-3 mx-auto g-4" v-for="item in projects" id="container2" :key="projects.id">
-                <div class="col">
-                    <div class="card h-100 shadow">
-                      <div class="card-body">
-                        <h5 class="card-title fw-bold" id="title">${gimme.name}</h5>
-                        <p class="card-text" id="description">${gimme.desc}</p>
-                        <p class="card-text" id="price">${gimme.price}</p>
-                      </div>
-                    </div>
-                    </div>
-            </div> -->
         <div class="container-fluid" id="fluid" v-if="projects">
             <div class="card-group row row-cols-1 row-cols-md-2 mx-auto g-4">
                 <div class="col" id="project" v-for="item in projects" :key="item.id">
@@ -72,10 +61,10 @@ export default {
     padding-bottom: 3rem;
     margin: 0;
     width: 100%;
-    background: linear-gradient(98.3deg, rgb(0, 0, 0) 10.6%, rgb(255, 0, 0) 97.7%);
     color: white;
     text-align: center;
 }
+
 
 .card-body {
     padding: 0;
@@ -93,15 +82,7 @@ export default {
     align-items: center;
 }
 
-#back {
-    background: linear-gradient(98.3deg, rgb(0, 0, 0) 10.6%, rgb(255, 0, 0) 97.7%);
 
-}
-
-#fluid {
-    background: linear-gradient(98.3deg, rgb(0, 0, 0) 10.6%, rgb(255, 0, 0) 97.7%);
-
-}
 
 .h5 {
     padding-bottom: 2rem;
@@ -190,6 +171,23 @@ export default {
 @media (width < 350px) {
     #project {
         padding: 0;
+    }
+}
+
+@media (width < 992px){
+    .h5{
+        margin-top:50px;
+    }
+}
+
+@media (width < 360px){
+    #picture{
+        height:20rem;
+    }
+    #description{
+        font-size:1rem;
+        padding-top:110px;
+
     }
 }
 </style>

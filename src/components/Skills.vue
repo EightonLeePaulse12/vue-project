@@ -99,6 +99,13 @@ h3 {
     text-align: center;
     margin-top: 2rem;
     margin-bottom: 2rem;
+    color:white;
+}
+h5{
+    color:white;
+}
+li{
+    color:white;
 }
 #spinner {
     padding: 30px;
@@ -114,7 +121,7 @@ h3 {
     text-decoration: none;
     color: black;
     font-weight: bold;
-    color: red;
+    color: rgb(255, 255, 255);
     font-size: 1.4rem;
     margin-top: 2rem;
 }
@@ -124,7 +131,7 @@ h3 {
 }
 
 #cv:hover {
-    color: rgb(211, 0, 0);
+    color: rgb(247, 247, 247);
     text-decoration: underline;
 }
 
