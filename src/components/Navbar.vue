@@ -4,11 +4,11 @@
       <div class="container-fluid navbaar" id="nav">
         <router-link class="navbar-brand" to="/"><img loading="lazy" id="logoImage"
             src="https://i.postimg.cc/43ctDYXQ/logo-color-removebg-preview.png" alt="Logo"></router-link>
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
-          aria-controls="navbarSupportedContent" aria-expanded="true" aria-label="Toggle navigation">
+        <button class="navbar-toggler collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
-        <div class="navbar-collapse collapse show" id="navbarSupportedContent">
+        <div class="navbar-collapse collapse" id="navbarSupportedContent">
           <ul class="navbar-nav mx-auto p-2">
             <li class="nav-item">
               <router-link class="nav-link active" aria-current="page" to="/">Home <i class="fa-solid fa-house"></i></router-link>
