@@ -29,17 +29,19 @@ h1 {
 }
 
 .headings {
-  background: linear-gradient(98.3deg, rgb(0, 0, 0) 10.6%, rgb(255, 0, 0) 97.7%);
   padding: 0;
 }
 
 @media (width < 992px) {
   h1 {
-    padding: 30px;
+    padding-top:110px;
+    margin-top:8rem;
   }
 
   h2 {
     margin-top: 1rem;
+    padding-top:110px;
+
   }
 }
 </style>

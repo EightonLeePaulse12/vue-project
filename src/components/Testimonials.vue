@@ -39,10 +39,7 @@ export default {
     border-radius: 20px;
 }
 
-#app {
-    background: linear-gradient(98.3deg, rgb(0, 0, 0) 10.6%, rgb(255, 0, 0) 97.7%);
 
-}
 
 .car {
     margin-top: 2rem;
@@ -62,14 +59,22 @@ img {
 }
 
 @media (width < 400px){
-    img{
-        object-fit:cover;
-    }
-
     .car{
         padding:0;
     }
 }
+
+@media (width < 532px){
+    #picture{
+        object-fit:cover;
+        width:100%;
+        border-radius:20px;
+    }
+    .car{
+        padding:0;
+    }
+}
+
 
 .card-body {
     color: rgb(255, 255, 255);

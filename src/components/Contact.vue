@@ -23,7 +23,7 @@
       </div>
     </form>
     <div class="container-fluid text-center">
-      <h5>Reach out!</h5>
+      <h5>Reach out to me!</h5>
       <h6><i class="fa-solid fa-phone"></i> +27 67 990 6093</h6>
       <h6><i class="fa-solid fa-envelope"></i> eightonleepaulse@gmail.com</h6>
     </div>
@@ -42,13 +42,8 @@ h1 {
   padding: 20px;
   width: 100%;
   text-align: center;
-  background: linear-gradient(98.3deg, rgb(0, 0, 0) 10.6%, rgb(255, 0, 0) 97.7%);
   margin-bottom: 0;
   color: white;
-}
-
-.text-center{
-  background: linear-gradient(98.3deg, rgb(0, 0, 0) 10.6%, rgb(255, 0, 0) 97.7%);
 }
 
 h5{
@@ -76,7 +71,6 @@ form {
   padding: 16rem;
   padding-bottom: 2rem;
   padding-top: 2rem;
-  background: linear-gradient(98.3deg, rgb(0, 0, 0) 10.6%, rgb(255, 0, 0) 97.7%);
 
 }
 
@@ -112,6 +106,14 @@ form {
 @media (width <=342px) {
   form {
     padding: 1rem;
+  }
+}
+
+@media (width < 992px){
+  h1{
+    margin-top:7rem;
+    padding-top:110px;
+
   }
 }
 </style>

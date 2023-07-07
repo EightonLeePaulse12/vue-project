@@ -4,11 +4,11 @@
       <div class="container-fluid navbaar" id="nav">
         <router-link class="navbar-brand" to="/"><img loading="lazy" id="logoImage"
             src="https://i.postimg.cc/43ctDYXQ/logo-color-removebg-preview.png" alt="Logo"></router-link>
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
-          aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent" aria-expanded="true" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
-        <div class="collapse navbar-collapse" id="navbarNav">
+        <div class="navbar-collapse collapse show" id="navbarSupportedContent">
           <ul class="navbar-nav mx-auto p-2">
             <li class="nav-item">
               <router-link class="nav-link active" aria-current="page" to="/">Home</router-link>
@@ -51,10 +51,6 @@ div {
   height: 1rem;
 }
 
-.navbaar {
-  background: linear-gradient(98.3deg, rgb(0, 0, 0) 10.6%, rgb(255, 0, 0) 97.7%);
-}
-
 nav {
   padding: 0 !important;
   height: 2rem;
@@ -67,10 +63,15 @@ nav {
 }
 
 #nav {
-  height: 11rem;
   display: flex !important;
   align-items: center !important;
   padding-top: 3rem !important;
+  background: linear-gradient(98.3deg, rgb(0, 0, 0) 10.6%, rgb(255, 0, 0) 97.7%);
+
+}
+
+ul{
+  height:100%;
 }
 
 router-link {
@@ -94,7 +95,6 @@ router-link {
 
 span {
   color: white !important;
-  background-color: rgb(255, 38, 0) !important;
   border: 2px solid black;
   border-radius: 5px;
 }
@@ -102,7 +102,6 @@ span {
 @media (width < 992px) {
   #nav {
     padding: 0 !important;
-    height: 7.5rem;
   }
 }
 </style>

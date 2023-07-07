@@ -69,9 +69,11 @@ h3 {
     margin-top: 6rem;
     padding: 20px;
     width: 100%;
+    color:white;
     font-weight: bold;
     text-align: center;
 }
+
 
 #spinner {
     padding: 30px;
@@ -103,7 +105,6 @@ img {
     height: 25rem;
     border: 2px solid black;
     margin-top: 3rem;
-    background: linear-gradient(98.3deg, rgb(0, 0, 0) 10.6%, rgb(255, 0, 0) 97.7%);
     border-radius: 20px;
     /*transform:translateX(100%);
     transition: transform .4s ease; */
@@ -113,6 +114,7 @@ img {
     padding: 1rem;
     text-align: center;
     margin-top: 3rem;
+    background-color:rgb(250, 235, 235);
     height: 25rem;
     border-radius: 20px;
     margin-bottom: 3rem;
@@ -126,7 +128,6 @@ img {
     height: 25rem;
     border-radius: 20px;
     border: 2px solid black;
-    background: linear-gradient(98.3deg, rgb(0, 0, 0) 10.6%, rgb(255, 0, 0) 97.7%);
     margin-bottom: 3rem;
 }
 
@@ -140,11 +141,14 @@ img {
     #desc {
         font-size: 1.5rem;
     }
+    h3{
+        padding-top:110px;
+    }
 }
 
 @media (width < 768px) {
     #desc {
-        font-size: 1.4rem;
+        font-size: 1.3rem;
     }
 }
 
