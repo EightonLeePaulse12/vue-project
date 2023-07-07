@@ -6,7 +6,7 @@
         <label for="exampleFormControlInput1" class="form-label">Name and Surname</label>
         <input type="text" name="name" class="form-control" id="exampleFormControlInput1"
           placeholder="Enter Your Name and Surname" required
-          oninvalid="this.setCustomValidity('Please Enter Your Name and surname so that I know who's speaking 😊')"
+          oninvalid="this.setCustomValidity('Please enter your name so I can know your name 😊')"
           oninput="this.setCustomValidity('')">
       </div>
       <div class="mb-3">
