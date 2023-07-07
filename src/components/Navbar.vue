@@ -11,22 +11,22 @@
         <div class="navbar-collapse collapse show" id="navbarSupportedContent">
           <ul class="navbar-nav mx-auto p-2">
             <li class="nav-item">
-              <router-link class="nav-link active" aria-current="page" to="/">Home</router-link>
+              <router-link class="nav-link active" aria-current="page" to="/">Home <i class="fa-solid fa-house"></i></router-link>
             </li>
             <li class="nav-item">
-              <router-link class="nav-link active" to="/about">About</router-link>
+              <router-link class="nav-link active" to="/about">About <i class="fa-solid fa-circle-info"></i></router-link>
             </li>
             <li class="nav-item">
-              <router-link class="nav-link active" to="/resume">Resume</router-link>
+              <router-link class="nav-link active" to="/resume">Resume <i class="fa-solid fa-file"></i></router-link>
             </li>
             <li class="nav-item">
-              <router-link class="nav-link active" to="/projects">Projects</router-link>
+              <router-link class="nav-link active" to="/projects">Projects <i class="fa-solid fa-diagram-project"></i></router-link>
             </li>
             <li class="nav-item">
-              <router-link class="nav-link active" to="/testimonials">Testimonials</router-link>
+              <router-link class="nav-link active" to="/testimonials">Testimonials <i class="fa-solid fa-quote-left"></i></router-link>
             </li>
             <li class="nav-item">
-              <router-link class="nav-link active" to="/contact">Contact</router-link>
+              <router-link class="nav-link active" to="/contact">Contact <i class="fa-solid fa-address-book"></i></router-link>
             </li>
           </ul>
         </div>
@@ -70,8 +70,8 @@ nav {
 
 }
 
-ul{
-  height:100%;
+ul {
+  height: 100%;
 }
 
 router-link {
@@ -89,7 +89,7 @@ router-link {
   text-shadow: 0 -1px 4px #FFF, 0 -2px 10px rgb(255, 38, 0), 0 -10px 20px #ff2f00, 0 -18px 40px #F00 !important;
 }
 
-.nav-link:active{
+.nav-link:active {
   text-shadow: 0 -1px 4px #eaf20c, 0 -2px 10px rgb(225, 255, 0), 0 -10px 20px #eeff00, 0 -18px 40px rgb(242, 255, 0) !important;
 }
 

@@ -81,7 +81,7 @@ h3 {
 
 #likes {
     text-align: center;
-    margin-bottom:20px;
+    margin-bottom: 20px;
     padding: 0;
 }
 
@@ -127,6 +127,12 @@ h5 {
     }
 }
 
+@media (width < 301px){
+    li:nth-child(5){
+        margin-bottom:20px;
+    }
+}
+
 @media (width < 507px) {
     #para {
         font-size: 1.1rem !important;
@@ -149,7 +155,7 @@ h5 {
 #picOfMe {
     border-radius: 10%;
     width: 100%;
-    margin-top: 1.7rem;
+    margin-top: 1.5rem;
     object-fit: contain;
     height: 17rem;
 }

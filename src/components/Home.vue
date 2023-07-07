@@ -31,7 +31,7 @@ export default {
     background-attachment: fixed;
     background-position: center center;
     object-fit: cover;
-    background-size:cover;
+    background-size: cover;
     background-repeat: no-repeat;
     z-index: -1;
     background-image: url('https://i.postimg.cc/KvPGWhZ4/172756.jpg');

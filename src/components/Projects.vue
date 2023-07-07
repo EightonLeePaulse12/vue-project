@@ -55,7 +55,6 @@ export default {
 </script>
 
 <style scoped>
-
 .h5 {
     padding-top: 7rem;
     padding-bottom: 3rem;
@@ -77,7 +76,7 @@ export default {
     height: 2.7rem;
     width: 100%;
     padding-bottom: 20px;
-    padding-top:auto;
+    padding-top: auto;
     justify-content: space-evenly;
     align-items: center;
 }
@@ -117,7 +116,7 @@ export default {
     color: black;
     background: rgb(166, 5, 5);
     width: 12rem;
-    font-weight:bold;
+    font-weight: bold;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -138,6 +137,11 @@ export default {
     color: rgb(226, 15, 15);
     background: white;
     border: 2px solid rgb(11, 11, 11);
+}
+
+.card:hover{
+    transform:scale(1.05);
+    transition:.6s;
 }
 
 #description {
@@ -174,19 +178,20 @@ export default {
     }
 }
 
-@media (width < 992px){
-    .h5{
-        margin-top:50px;
+@media (width < 992px) {
+    .h5 {
+        margin-top: 50px;
     }
 }
 
-@media (width < 360px){
-    #picture{
-        height:20rem;
+@media (width < 360px) {
+    #picture {
+        height: 20rem;
     }
-    #description{
-        font-size:1rem;
-        padding-top:110px;
+
+    #description {
+        font-size: 1rem;
+        padding-top: 10px;
 
     }
 }

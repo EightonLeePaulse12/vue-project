@@ -64,20 +64,36 @@ export default {
 </script>
 
 <style scoped>
-
 h3 {
     margin-top: 6rem;
     padding: 20px;
     width: 100%;
-    color:white;
+    color: white;
     font-weight: bold;
     text-align: center;
 }
 
+#primary:hover{
+    transform:scale(1.05)
+}
+#secondary:hover{
+    transform:scale(1.05)
+}
+#tertiary:hover{
+    transform:scale(1.05)
+}
+
 
 #spinner {
+    color:white;
     padding: 30px;
     margin: 30px;
+}
+
+@media (width > 1199px){
+    #desc{
+        font-size:1.8rem !important;
+    }
 }
 
 #years {
@@ -114,7 +130,7 @@ img {
     padding: 1rem;
     text-align: center;
     margin-top: 3rem;
-    background-color:rgb(250, 235, 235);
+    background-color: rgb(250, 235, 235);
     height: 25rem;
     border-radius: 20px;
     margin-bottom: 3rem;
@@ -141,8 +157,9 @@ img {
     #desc {
         font-size: 1.5rem;
     }
-    h3{
-        padding-top:110px;
+
+    h3 {
+        padding-top: 110px;
     }
 }
 

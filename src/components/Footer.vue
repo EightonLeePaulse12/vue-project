@@ -150,6 +150,16 @@ p {
 
 .width {
     margin-top: auto;
+    border-top:2px solid rgb(255, 188, 188);
+    border-top-right-radius: 7px;
+    border-top-left-radius: 7px;
+}
+
+@media (width < 301px){
+    p{
+        margin-bottom:5px;
+        margin-top:6px;
+    }
 }
 
 @media (width < 242px) {
