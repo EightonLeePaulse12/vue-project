@@ -93,6 +93,7 @@ h3 {
 @media (width > 1199px){
     #desc{
         font-size:1.8rem !important;
+        line-height:3rem !important;
     }
 }
 
@@ -103,7 +104,8 @@ h3 {
 }
 
 #desc {
-    font-size: 1.99rem;
+    font-size: 1.2rem !important;
+    line-height: 4.5rem;
     font-weight: bold;
 }
 
@@ -156,6 +158,7 @@ img {
 @media (width < 992px) {
     #desc {
         font-size: 1.5rem;
+        line-height: 2.2rem !important;
     }
 
     h3 {
@@ -166,6 +169,7 @@ img {
 @media (width < 768px) {
     #desc {
         font-size: 1.3rem;
+        line-height: 2rem !important;
     }
 }
 
@@ -178,6 +182,7 @@ img {
 @media (width < 485px) {
     #desc {
         font-size: 1.2rem;
+        line-height: 1.7rem !important;
     }
 }
 
@@ -187,9 +192,38 @@ img {
     }
 }
 
+@media (width < 376px){
+    #desc{
+        line-height:1.5rem !important;
+    }
+}
+
 @media (width < 354px) {
     #desc {
         font-size: 1.1rem;
+    }
+}
+@media (width < 352px){
+    #desc{
+        font-size:1rem !important;
+    }
+}
+
+@media (width < 299px){
+    #desc{
+        font-size:.8rem !important;
+    }
+}
+@media (width < 246px){
+    #desc{
+        font-size:.7rem !important;
+    }
+}
+
+@media (width < 220px){
+    #desc{
+        font-size:.6rem !important;
+        line-height:1.4rem !important;
     }
 }
 
