@@ -37,23 +37,23 @@
                         Likes
                     </h5>
                     <ul>
-                        <li>Anime</li>
+                        <li>Watching Anime</li>
                         <li>Gaming</li>
-                        <li>Karate</li>
-                        <li>Water Parks</li>
-                        <li>Swimming</li>
+                        <li>Doing Karate</li>
+                        <li>Going to Water Parks</li>
+                        <li>Going Swimming</li>
                     </ul>
                 </div>
                 <div class="col" id="dislikes">
                     <h5>
-                        Dislikes
+                        Hobbies
                     </h5>
                     <ul>
-                        <li>Marmite</li>
-                        <li>Cauliflower</li>
-                        <li>Being sick</li>
-                        <li>Rugby</li>
-                        <li>Dogs</li>
+                        <li>Taking long walks</li>
+                        <li>Practising Karate</li>
+                        <li>Keeping up with new technologies</li>
+                        <li>Coding</li>
+                        <li>Camping</li>
                     </ul>
                 </div>
             </div>

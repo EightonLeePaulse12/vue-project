@@ -30,6 +30,7 @@ export default {
 <style scoped>
 #picture {
     height: 30rem;
+    margin-top:20px;
     object-fit: contain;
     background: transparent;
 }

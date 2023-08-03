@@ -24,6 +24,7 @@
                     <ul id="list" v-if="tools">
                         <li> {{ tools[0]?.name }} - {{ tools[0]?.type }} </li>
                         <li> {{ tools[1]?.name }} - {{ tools[1]?.type }} </li>
+                        <li> {{ tools[2]?.name }} - {{ tools[2]?.type }} </li>
                     </ul>
                     <ul v-else>
                         <div class="d-flex justify-content-center">
@@ -35,6 +36,7 @@
                     <div class="row">
                         <div class="col"><img loading="lazy" :src="tools[0]?.image" id="img" alt="HTML"></div>
                         <div class="col"><img loading="lazy" :src="tools[1]?.image" id="img" alt="CSS"></div>
+                        <div class="col"><img loading="lazy" :src="tools[2]?.image" id="img" alt="CSS"></div>
                     </div>
                 </div>
             </div>
@@ -124,7 +126,7 @@ li {
 }
 
 #list {
-    margin-bottom: 4.3rem;
+    margin-bottom: 1rem;
     padding: 0;
 }
 
