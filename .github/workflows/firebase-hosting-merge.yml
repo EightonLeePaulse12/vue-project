@@ -15,6 +15,6 @@ jobs:
       - uses: FirebaseExtended/action-hosting-deploy@v0
         with:
           repoToken: '${{ secrets.GITHUB_TOKEN }}'
-          firebaseServiceAccount: '${{ secrets.FIREBASE_SERVICE_ACCOUNT_NEW_PORTFOLIO_720FF }}'
+          firebaseServiceAccount: '${{ secrets.FIREBASE_SERVICE_ACCOUNT_MYVUEPORTFOLIO_5F3EB_2B026 }}'
           channelId: live
-          projectId: new-portfolio-720ff
+          projectId: myvueportfolio-5f3eb-2b026
