@@ -199,10 +199,6 @@ li {
 }
 
 @media (width < 637px) {
-    #list li:nth-child(2) {
-        margin-bottom: 5.8rem;
-    }
-
     #colLeft {
         padding: 20px;
         padding-top: 0;
@@ -225,6 +221,12 @@ li {
     }
 }
 
+@media (width < 521px){
+    #roww {
+        flex-direction: column !important;
+    }
+}
+
 @media (width < 480px) {
     #list li:nth-child(2) {
         margin-bottom: 1rem;
@@ -232,10 +234,6 @@ li {
 
     #list {
         margin-bottom: 2rem;
-    }
-
-    #row {
-        flex-direction: column;
     }
 
     #colLeft {
