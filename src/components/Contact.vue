@@ -6,20 +6,20 @@
         <label for="exampleFormControlInput1" class="form-label">Name and Surname</label>
         <input type="text" name="name" class="form-control" id="exampleFormControlInput1"
           placeholder="Enter Your Name and Surname" required
-          oninvalid="this.setCustomValidity('Please enter your name so I can know your name 😊')"
+          oninvalid="this.setCustomValidity('Please enter your name 😊')"
           oninput="this.setCustomValidity('')">
       </div>
       <div class="mb-3">
         <label for="exampleFormControlInput1" class="form-label">E-mail</label>
         <input type="email" name="email" class="form-control" id="exampleFormControlInput1"
           placeholder="Enter Your E-mail" required
-          oninvalid="this.setCustomValidity('Please enter your e-mail so that I can get back to you 😊')"
+          oninvalid="this.setCustomValidity('Please enter your e-mail so that I'm able to get back to you 😁')"
           oninput="this.setCustomValidity('')">
       </div>
       <div class="mb-3">
         <label for="exampleFormControlTextarea1" class="form-label">Message</label>
         <textarea class="form-control" name="message" id="exampleFormControlTextarea1" placeholder="Send me a message"
-          rows="3" required oninvalid="this.setCustomValidity('Please enter a message for me to read 😊')"
+          rows="3" required oninvalid="this.setCustomValidity('Let me know what's up 😎')"
           oninput="this.setCustomValidity('')"></textarea>
       </div>
       <!-- your other form fields go here -->
