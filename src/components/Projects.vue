@@ -63,7 +63,21 @@ export default {
     color: white;
     text-align: center;
 }
+.card{
+    border:1px solid white;
 
+    background: transparent !important;
+}
+.card-body{
+    background: transparent !important;
+    color:white !important;
+}
+#project{
+    background: transparent !important;
+}
+.container-fluid{
+    background: transparent !important;
+}
 
 .card-body {
     padding: 0;

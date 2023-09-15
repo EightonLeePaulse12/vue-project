@@ -153,11 +153,13 @@ h5 {
 }
 
 #picOfMe {
-    border-radius: 10%;
-    width: 100%;
+    border-radius: 50%;
     margin-top: 1.5rem;
-    object-fit: contain;
-    height: 17rem;
+    object-fit: cover;
+    object-position: center top;
+    width:12rem;
+    height:12rem;
+    border-radius: none !important;
 }
 
 .nice {
